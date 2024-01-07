@@ -37,7 +37,7 @@ export const MoviesListPage = () => {
       let response =  await fetch(
         `${import.meta.env.VITE_APP_API_URLBASE}/movies`, {
            method : 'POST',
-           //body : data,  <-- EN EL CASO QUE QUERAMOS SUBIR IMÁGENES
+          
            body : JSON.stringify(data),
            headers : {
             'Content-Type' : 'application/json'
